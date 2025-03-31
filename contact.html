@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Deekshitha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(0,0,33);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18,18,62);
+            padding: 0 50px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: lavender;
+        }
+        .container {
+            flex: 1;
+            max-width: 60vw;
+            margin: auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .contact-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+            display: inline-block;
+            text-align: left;
+        }
+        .contact-box p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: lightgray;
+        }
+        .location {
+            color: yellow;
+            font-weight: bold;
+        }
+        .map-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            border-radius: 10px;
+            border: none;
+        }
+        footer {
+            background-color: #0e0e1a;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul {
+            list-style: none;
+        }
+        .footer > div {
+            width: 120px;
+        }
+        footer img {
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Deekshitha's Portfolio</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h1>Contact Me</h1>
+        <div class="contact-box">
+            <p><strong>Email:</strong> deekshitha_b@srmap.edu.in</p>
+            <p><strong>Phone:</strong> +91 8247887034</p>
+            <p class="location"><strong>College:</strong> SRM University, Amaravati, Andhra Pradesh</p>
+            <p class="location"><strong>Permanent Address:</strong> 3-48, Peapully, Nandyal, Andhra Pradesh</p>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map-container">
+            <h2>Find My College Location</h2>
+            <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15306.97043434098!2d80.5014720457619!3d16.448971828197716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f35f8be0842b%3A0xe2c1e5d55a9a8ed4!2sSRM%20University%20AP%2C%20Amaravati!5e0!3m2!1sen!2sin!4v1712065780606!5m2!1sen!2sin" 
+    width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+</iframe>
+
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <div class="footer-second">
+                <a href="https://www.linkedin.com/in/boreddy-deekshitha-b7066024b/" target="_blank" rel="noopener noreferrer">
+                    <img src="linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="footer-third">
+                <a href="https://www.instagram.com/boreddydeekshitha/?hl=en" target="_blank" rel="noopener noreferrer">
+                    <img src="insta.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="footer-fourth">
+                <a href="https://github.com/deekshitha-January?tab=repositories" target="_blank" rel="noopener noreferrer">
+                    <img src="github_logo.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

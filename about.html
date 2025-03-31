@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Deekshitha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(0,0,33);
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18,18,62);
+            padding: 0 50px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: lavender;
+        }
+        .container {
+            max-width: 80vw;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        .about-text {
+            width: 60%;
+        }
+        .about-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: lightgray;
+        }
+        .about-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .skills-container, .hobbies-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .skill-card, .hobby-card {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+        .skill-card p, .hobby-card p {
+            color: rgb(14, 14, 15);
+        }
+        .skill-card strong, .hobby-card strong {
+            color: rgb(101, 145, 212);
+        }
+        .divider {
+            height: 2px;
+            background-color: white;
+            margin: 50px 0;
+            opacity: 0.5;
+        
+        
+        }
+
+        .hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.hobby-card {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 300px; /* Limit max width */
+    height: 180px; /* Adjust height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hobby-card:hover {
+    transform: scale(1.05);
+}
+
+/* Background images */
+.cooking {
+    background-image: url('cooking.jpg'); /* Replace with your image path */
+}
+
+.traveling {
+    background-image: url('travel.jpg'); /* Replace with your image path */
+}
+
+.reality-shows {
+    background-image: url('reality.jpg'); /* Replace with your image path */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hobby-card {
+        max-width: 90%; /* Make it fit better on smaller screens */
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hobby-card {
+        max-width: 100%;
+        height: 140px;
+        font-size: 1rem;
+    }
+}
+
+        .hobbies-container p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Poppins', sans-serif;
+}
+
+        .cooking {
+            background-image: url('cooking.jpg');
+        }
+        .traveling {
+            background-image: url('travel.jpeg');
+        }
+        .reality-shows {
+            background-image: url('tv.jpeg');
+        }
+        footer {
+            background-color: #0e0e1a;
+            height: 150px;
+        }
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul {
+            list-style: none;
+        }
+        .footer > div {
+            width: 120px;
+        }
+        footer img {
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Deekshitha's Portfolio</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>I am passionate about <strong>Web Development</strong> and <strong>Data Analysis</strong>. Currently, I am working on my <strong>Final Year Project</strong> using <strong>Federated Learning</strong> in healthcare. Additionally, I am developing a <strong>Japanese Flashcard App</strong> to improve my language learning while honing my web development skills.</p>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <h3>Web Development</h3>
+                        <p>Experienced in <strong>HTML, CSS, JavaScript, React</strong>, and building dynamic web applications.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Data Analysis</h3>
+                        <p>Skilled in <strong>Python, SQL</strong>, and data visualization tools for extracting insights from data.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Japanese Proficiency</h3>
+                        <p>Currently at <strong>N4 level</strong>, preparing for <strong>N3</strong>, and actively improving my Japanese skills.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Research & Problem-Solving</h3>
+                        <p>Working on <strong>Federated Learning in Healthcare</strong> and constantly improving <strong>DSA skills</strong>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="my_image.jpeg" alt="Deekshitha">
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <h2>Hobbies</h2>
+        <div class="hobbies-container">
+            <div class="hobby-card cooking">
+                <h3>Cooking</h3>
+                <p>I enjoy experimenting with different cuisines and trying out new recipes.</p>
+            </div>
+            <div class="hobby-card traveling">
+                <h3>Traveling</h3>
+                <p>Exploring new places, cultures, and cuisines is something I love.</p>
+            </div>
+            <div class="hobby-card reality-shows">
+                <h3>Watching Reality Shows</h3>
+                <p>I like watching reality shows for entertainment and to unwind.</p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <div class="footer-second">
+                <a href="https://www.linkedin.com/in/boreddy-deekshitha-b7066024b/" target="_blank" rel="noopener noreferrer">
+                    <img src="linkedin.svg" alt="">
+                </a>
+            </div>
+            <div class="footer-third">
+                <a href="https://www.instagram.com/boreddydeekshitha/?hl=en" target="_blank" rel="noopener noreferrer">
+                    <img src="insta.png" alt="">
+                </a>
+            </div>
+            <div class="footer-fourth">
+                <a href="https://github.com/deekshitha-January?tab=repositories" target="_blank" rel="noopener noreferrer">
+                    <img src="github_logo.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

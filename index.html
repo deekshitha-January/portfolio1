@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deekshitha - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(0,0,33);
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18,18,62);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center; /* Fixed typo here */
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: lavender;
+            font-size: 1.01rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+
+        }
+        .firstSection > div{
+            width: 30%;
+            
+        }
+        .leftSection{
+            width: 34px;
+            font-size: 2.5rem;
+
+        }
+
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .leftSection .btn a{
+            text-decoration: none;
+            color: white;
+        }
+        .rightSection img{
+            width: 50%;
+
+        }
+        .purple{
+            color: blueviolet;
+        }
+        .text-gray{
+            color: grey;
+        }
+
+        #element{
+            color: rgb(124, 124, 201);
+        }
+
+        .secondSection{
+            margin: auto;
+            max-width: 80vw;
+            height: 80vh;
+        }
+        main hr{
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box{
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 100px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .secondSection .vertical{
+            height: 50px;
+            width: 1px;
+            background-color: white;
+            margin: 0 50px;
+
+        }
+
+        .image-top{
+            width: 40px;
+            position: relative;
+            top: -60px;
+            left: -7px;
+        }
+
+        .vertical-title{
+            position: relative;
+            top: 0px;
+            width: 150px;
+            font-size: 15px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 40px;
+            color: grau;
+            width: 150px;
+            font-size: 9px;
+            font-size: 12px;
+        }
+        footer{
+            background-color: #0e0e1a;
+            height: 150px;
+        }
+
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        .footer > div{
+            width: 120px;
+        }
+
+        footer img{
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Deekshitha's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="/index.html"> Home</a></li>
+               <li><a href="/about.html"> About</a></li>
+               <li><a href="/projects.html">Projects</a></li>
+              <li><a href="/contact.html"> Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="purple">Deekshitha</span></div>
+                <div>and I am a </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a href="https://drive.google.com/file/d/1vnq_U2zTLTyorFHvDjr8dPMi4tpWg7hF/view?usp=sharing">Download Resume</a></button>
+                    <button class="btn"><a href="https://github.com/deekshitha-January?tab=repositories">Visit Github</a></button>
+                </div>
+
+            </div>
+            <div class="rightSection"><img src="my_image.jpeg" alt=""></div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What have I done so far</span>
+            <h1>Work experience ans skills</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top"  src="developer_girl.png" alt="">
+                    <div class="vertical-text">
+                        Frontend Development Skills
+                    </div>
+                    <div class="vertical-desc">
+                        I am skilled in HTML, CSS, JavaScript, React, and Tailwind CSS, with experience in building responsive and user-friendly web applications.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top"  src="data_science.png" alt="">
+                    <div class="vertical-text">
+                        Data Analysis Skills
+                    </div>
+                    <div class="vertical-desc">
+                        I am familiar with NumPy, Pandas, Matplotlib, and Scikit-Learn, and currently learning Power BI to enhance my data analysis and visualization skills.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top"  src="developer_girl.png" alt="">
+                    <div class="vertical-text">
+                        Data Structures and Algorithms
+                    </div>
+                    <div class="vertical-desc">
+                        I consistently practice DSA using C++, focusing on problem-solving and optimizing algorithms like sorting, searching, graphs, and dynamic programming.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top"  src="arithmetic.jpg" alt="">
+                    <div class="vertical-text">
+                        Arithmetic and Reasoning Skillss
+                    </div>
+                    <div class="vertical-desc">
+                        I have strong logical thinking and problem-solving abilities, with proficiency in arithmetic reasoning, quantitative aptitude, and analytical problem-solving.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+         
+            <div class="footer-second">
+                <a href="https://www.linkedin.com/in/boreddy-deekshitha-b7066024b/" target="_blank" rel="noopener noreferrer">
+                    <img src="linkedin.svg" alt="">
+                </a>
+            </div>
+            <div class="footer-third">
+                <a href="https://www.instagram.com/boreddydeekshitha/?hl=en" target="_blank" rel="noopener noreferrer">
+                    <img src="insta.png" alt="">
+                </a>
+            </div>
+            <div class="footer-fourth">
+                <a href="https://github.com/deekshitha-January?tab=repositories" target="_blank" rel="noopener noreferrer">
+                    <img src="github_logo.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web developer.', 'Data analyst.' , 'Good programmar.'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
